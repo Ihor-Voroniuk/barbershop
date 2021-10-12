@@ -1,0 +1,21 @@
+:root{
+    --color-white: var(--color-white);
+    --color-dark-gray: #303030;
+    --color-grey:var(--color-dark-gray);
+    --color-light-grey:#9DA4BD ; 
+    --color-orange: #FF6C00;
+
+    
+    
+    
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-dark-gray);
+
+}
+address{
+    font-style: normal;
+}
