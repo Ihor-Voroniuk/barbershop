@@ -387,6 +387,10 @@ button {
   background: var(--color-white);
 }
 
+.booking-form-control:focus-within::before{
+  background: var(--color-white)
+}
+
 .booking-form-control-wide {
   width: 100%;
 }
@@ -413,4 +417,8 @@ button {
 }
 .booking-form-input:last-child {
   margin-right: 0;
+}
+
+.booking-form-input:focus::placeholder{
+   color: var(--color-white)
 }
