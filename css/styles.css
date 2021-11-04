@@ -1,21 +1,416 @@
-:root{
-    --color-white: var(--color-white);
-    --color-dark-gray: #303030;
-    --color-grey:var(--color-dark-gray);
-    --color-light-grey:#9DA4BD ; 
-    --color-orange: #FF6C00;
-
-    
-    
-    
+:root {
+  --color-white: #fff;
+  --color-dark-grey: #303030;
+  --color-grey: #555;
+  --color-light-grey: #9da4bd;
+  --color-orange: #ff6c00;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--color-dark-gray);
-
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-dark-grey);
+  margin: 0;
+  line-height: 1.15;
 }
-address{
-    font-style: normal;
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  display: block;
+  width: 160px;
+  padding: 11px 0;
+  text-align: center;
+  border: 1px solid var(--color-orange);
+  color: var(--color-white);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 25px;
+  letter-spacing: 0.09em;
+  transition: background-color 0.03s color 0.3s;
+}
+.btn:hover {
+  color: var(--color-orange);
+  background-color: white;
+}
+
+.booking-online {
+  margin: 0 auto;
+}
+.btn.dark:hover {
+  background-color: var(--color-dark-grey);
+}
+.section-padding {
+  padding: 130px 0;
+}
+
+.section-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+}
+
+.section-description {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-description::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-dark-grey);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.text-light-grey.section-description::before {
+  background-color: var(--color-light-grey);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-dark-grey {
+  color: var(--color-dark-grey);
+}
+
+.text-light-grey {
+  color: var(--color-light-grey);
+  opacity: 0.6;
+}
+
+.margin-b-sm {
+  margin-bottom: 20px;
+}
+
+.margin-b-xl {
+  margin-bottom: 44px;
+}
+
+.main-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-grey);
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+}
+
+/* стили шапки */
+.header {
+  background-color: #000; /* временно */
+  padding: 32px 0;
+}
+
+.header-container,
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.main-menu-item + .main-menu-item {
+  margin-left: 40px;
+}
+
+.header-link {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: var(--color-orange);
+}
+
+.header-phone {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+/* стили героя */
+.hero-section {
+  /* background-image: url('../images/hero-desktop-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
+  background: url("../images/hero-desktop-bg.png") no-repeat center/cover;
+  padding: 132px 0 206px;
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  color: var(--color-white);
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+
+.hero-subtitle {
+  color: var(--color-light-grey);
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+/* секция о нас */
+.about-us-list {
+  margin-right: 64px;
+}
+
+.about-us-item:first-child {
+  margin-right: 30px;
+}
+
+.about-us-text {
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  color: var(--color-grey);
+  margin-bottom: 40px;
+}
+
+/* услуги и цены */
+.services-and-prices {
+  background-color: #111319;
+  background-image: url("../images/services-desktop-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.price-list-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.price-list {
+  width: 50%;
+  padding: 30px 40px;
+  background-color: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.price-list-item {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.price-list.darked {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.price-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.servise-separatop {
+  /* display: block; */
+  height: 1px;
+  width: 100%;
+  margin: 0 6px;
+  background-color: var(--color-light-grey);
+
+  transform: translateY(22px);
+  opacity: 12%;
+}
+/* наши мастера */
+.our-masters {
+  background-color: #f7f7f7;
+}
+
+.masters-list {
+  margin: 0 -15px;
+}
+
+.masters-list-item {
+  width: 33.33333%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.master-image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.master-name {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.master-job {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--color-orange);
+  margin-bottom: 30px;
+}
+
+.masters-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masters-socials-item + .masters-socials-item {
+  margin-left: 10px;
+}
+
+.masters-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: var(--color-dark-grey);
+}
+
+.masters-socials-link:hover {
+  color: var(--color-orange);
+}
+
+.masters-socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.booking-form-container {
+}
+
+.contact-us {
+  background-color: #191c26;
+}
+
+.masters-socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.contact-us .container {
+  display: flex;
+  flex-direction: row;
+}
+.contact-us-block {
+  width: 50%;
+}
+
+.booking-form {
+  padding-right: 20px;
+}
+
+.booking-form-row {
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: row;
+}
+
+.booking-form-control {
+  width: 50%;
+  margin-right: 30px;
+  position: relative;
+}
+
+.booking-form-control::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--color-white);
+}
+
+.booking-form-control-wide {
+  width: 100%;
+}
+.booking-form-input {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  margin-right: 30px;
+  height: 24px;
+
+  outline: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.booking-form-textarea {
+  resize: none;
+  height: 76px;
+}
+.booking-form-input:last-child {
+  margin-right: 0;
 }
