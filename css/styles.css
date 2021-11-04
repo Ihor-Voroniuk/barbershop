@@ -88,6 +88,7 @@ button {
   font-family: "Raleway", sans-serif;
   font-size: 42px;
   letter-spacing: 0.05em;
+
 }
 
 .section-description {
@@ -360,6 +361,20 @@ button {
   width: 50%;
 }
 
+.contact-us-block-bg{
+  top: o;
+  right: 0%;
+background: url("../images/bg2.png");
+position: absolute;
+
+}
+
+.contact-us{
+  position: relative;
+}
+
+
+
 .booking-form {
   padding-right: 20px;
 }
@@ -422,3 +437,93 @@ button {
 .booking-form-input:focus::placeholder{
    color: var(--color-white)
 }
+
+.contacts-list-item{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+
+letter-spacing: 0.02em;
+color: var(--color-light-grey);
+margin-bottom: 20px;
+}
+
+.contacts-list-link{
+  color: var(--color-light-grey);
+}
+
+.contacts-list-item:last-child{
+  margin-bottom: 0px;
+
+}
+
+.work-house{
+  margin-top: 70px;
+}
+
+.work-house-title{
+
+font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+color: white;
+}
+
+.work-house-title-discription{
+     font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  letter-spacing: 0.02em;
+  color: var(--color-light-grey);
+}
+
+
+.work-house-title::before{
+  background: rgba(157, 164, 189, 0.4);
+}
+
+.contacts-list{
+  margin-left: 35px;
+}
+.contacts-list-item.address::before{
+  content: "";
+  background-image: url("../images/map-pin.svg");
+  position: absolute;
+  height:24px ;
+  width: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contacts-list-item.phone::before {
+  content: "";
+  background-image: url("../images/");
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+  .contacts-list-item.mail::before {
+  content: "";
+  background-image: url("../images/mail.svg");
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contacts-list-item.addres::before{
+  
+}
+.contacts-list-item.phone::before
+.contacts-list-item.mail::before
