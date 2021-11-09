@@ -80,6 +80,42 @@ button {
 .btn.dark:hover {
   background-color: var(--color-dark-grey);
 }
+
+/*---------portfolio---------*/
+
+.portfolio{
+
+}
+
+.portfolio__description {
+  margin-bottom: 40px;
+}
+
+.portfolio__list{
+   display: flex;
+   flex-direction: row;
+   width: 270px;
+   height: 360px;
+
+}
+.portfolio__item{
+margin-right: 30px;
+}
+.portfolio__item--last{
+margin-right:0px;
+}
+
+.portfolio__img{
+
+}
+
+
+
+
+
+
+
+
 .section-padding {
   padding: 130px 0;
 }
@@ -273,6 +309,77 @@ button {
   transform: translateY(22px);
   opacity: 12%;
 }
+
+/* ------почему мы------- */
+.section-advantages{
+  
+}
+.section-advantages__container{
+  display:flex;
+}
+.section-advantages__colum{
+  width: 50%;
+}
+
+.section-advantages__scores{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.section-advantages__scores--item{
+    margin: 15px;
+}
+
+.section-advantages__scores--item--down{
+  position: relative;
+  top: 32px;
+}
+.section-advantages__title{
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.score{
+   width: 170px;
+   height: 133px;
+   background:#f7f7f7;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   pad: 15px;
+}
+
+.score__counts{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 57px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #303030;
+position: relative;
+}
+
+.score__counts::after{
+  content: '+';
+  position: absolute;
+  font-size: 16px;
+  right:-12px ;
+  top: -8px;
+  color: var(--color-orange);
+}
+.score__title{
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+text-align: center;
+color: #303030;
+}
+
 /* наши мастера */
 .our-masters {
   background-color: #f7f7f7;
