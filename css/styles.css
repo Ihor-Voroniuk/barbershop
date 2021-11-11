@@ -47,6 +47,7 @@ button {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .flex {
@@ -632,5 +633,69 @@ color: white;
 .contacts-list-item.addres::before{
   
 }
-.contacts-list-item.phone::before
-.contacts-list-item.mail::before
+
+.copyright{
+  height: 127px;
+  display: flex;
+  align-items: center;
+
+}
+
+.copyright__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height */
+
+letter-spacing: 0.2em;
+color:var(--color-light-grey);
+}
+
+.social-links{
+  display: flex;
+  flex-direction: row;
+
+}
+.social-links__item--line{
+  align-self: center;
+  margin-bottom: 0px;
+}
+
+.social-links__item{
+   margin-right: 40px;
+}
+
+.social-links__item--last {
+  margin-right: 0px;
+}
+
+.social-links__link{
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+letter-spacing: 0.2em;
+color: var(--color-light-grey);
+text-decoration: none;
+}
+
+.social-links--indent{
+  margin-top: 50px;
+}
+
+.social-links__link--light{
+  color: var(--color-light-grey);
+}
+
+.social-links__item--light::before{
+  background-color: var(--color-light-grey);
+}

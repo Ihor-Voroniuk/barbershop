@@ -50,20 +50,21 @@
     <!-- герой -->
     <section class="hero-section">
       <div class="container">
-        <ul class="social-links" hidden>
-          <li class="social-item">
-            <a href="#" class="social-link" lang="en">Instagram</a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-link" lang="en">YouTube</a>
-          </li>
-        </ul>
         <div class="hero-content">
           <p class="section-description text-light-grey" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero-title" lang="en">BarberShop</h1>
           <h2 class="hero-subtitle main-text">Мы эксперты в модных мужских стрижках.
             Работаем быстро, осторожно и со вкусом.</h2>
         </div>
+        <ul class="social-links social-links--indent" hidden>
+          <li class="social-links__item social-links__item--light section-description"></li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-link__link--light" lang="en">Instagram</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link social-link__link--light" lang="en">YouTube</a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -348,15 +349,18 @@
     </div>
   </div>
   <div class="copyright">
-    <p class="copyright-text">&#169 Copyright 2021</p>
-    <ul class="social-links">
-      <li class="social-item">
-        <a href="#" class="social-link" lang="en">Instagram</a>
-      </li>
-      <li class="social-item">
-        <a href="#" class="social-link" lang="en">Youtube</a>
-      </li>
-    </ul>
+    <div class="copyright__container container">
+      <p class="copyright__text">&#169 Copyright 2021</p>
+      <ul class="social-links">
+        <li class="social-links__item social-links__item--line section-description"></li>
+        <li class="social-links__item">
+          <a href="#" class="social-links__link" lang="en">Instagram</a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-links__link" lang="en">Youtube</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </footer>
 </body>
